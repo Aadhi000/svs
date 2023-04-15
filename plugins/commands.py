@@ -25,8 +25,11 @@ async def start(client, message):
                     InlineKeyboardButton('Add To your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('Help', callback_data='help'),
-                    InlineKeyboardButton('Search Movie', switch_inline_query_current_chat='')                                   
-                  ]]
+                    InlineKeyboardButton('Search Movie', switch_inline_query_current_chat='')  
+                ],[
+                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/+y0VZlJTcg_BkZWE1")            
+                  ]]                 
+                  
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
         await asyncio.sleep(2) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
@@ -43,7 +46,9 @@ async def start(client, message):
                     InlineKeyboardButton('Add To your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('Help', callback_data='help'),
-                    InlineKeyboardButton('Search Movie', switch_inline_query_current_chat='')                                   
+                    InlineKeyboardButton('Search Movie', switch_inline_query_current_chat='')  
+                ],[
+                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/+y0VZlJTcg_BkZWE1")            
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -86,7 +91,9 @@ async def start(client, message):
                     InlineKeyboardButton('Add To your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('Help', callback_data='help'),
-                    InlineKeyboardButton('Search Movoe', switch_inline_query_current_chat='')                                   
+                    InlineKeyboardButton('Search Movie', switch_inline_query_current_chat='')  
+                ],[
+                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/+y0VZlJTcg_BkZWE1")            
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
