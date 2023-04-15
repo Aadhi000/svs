@@ -24,7 +24,7 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('Add To your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('Help', callback_data='help')
+                    InlineKeyboardButton('Help', callback_data='help'),
                     InlineKeyboardButton('Search Movoe', switch_inline_query_current_chat='')                                   
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -42,7 +42,7 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('Add To your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('Help', callback_data='help')
+                    InlineKeyboardButton('Help', callback_data='help'),
                     InlineKeyboardButton('Search Movoe', switch_inline_query_current_chat='')                                   
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -85,7 +85,7 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('Add To your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('Help', callback_data='help')
+                    InlineKeyboardButton('Help', callback_data='help'),
                     InlineKeyboardButton('Search Movoe', switch_inline_query_current_chat='')                                   
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
